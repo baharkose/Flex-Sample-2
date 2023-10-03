@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -47,8 +47,8 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 40px 0;
+  /* width: 500px; */
 }
 
 /* SMALLER ELEMENTS */
@@ -89,8 +89,8 @@ p {
 
 ul,
 ol {
-  /* margin-left: 50px;
-  margin-bottom: 20px; */
+  margin: 10px 25px;
+  /*margin-bottom: 20px; */
 }
 
 li {
@@ -103,14 +103,6 @@ li:last-child {
   margin-bottom: 0;
 }
 
-/* footer p {
-  font-size: 16px;
-} */
-
-/* article header p {
-  font-style: italic;
-} */
-
 #author {
   font-style: italic;
   font-size: 18px;
@@ -119,15 +111,6 @@ li:last-child {
 #copyright {
   font-size: 16px;
 }
-
-/* .related-author {
-  font-size: 18px;
-  font-weight: bold;
-} */
-
-/* ul {
-  list-style: none;
-} */
 
 .related {
   list-style: none;
@@ -283,4 +266,24 @@ h2::before {
   font-size: 14px;
   font-weight:normal; 
   font-style: italic;
+}
+
+.row{
+  display: flex;
+  gap:75px;
+}
+
+aside{
+/*
+DEFAULTS
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis:auto;
+*/
+
+  flex:0 0 300px;
+}
+
+article{
+  flex: 0 0 825px;
 }
