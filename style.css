@@ -271,6 +271,7 @@ h2::before {
 .row{
   display: flex;
   gap:75px;
+  align-items: flex-start;
 }
 
 aside{
